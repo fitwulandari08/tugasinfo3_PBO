@@ -1,0 +1,20 @@
+# main.py
+from contohPBO_23055 import Kalkulator
+
+def main():
+    # Membuat objek kalkulator
+    kalkulator = Kalkulator()
+
+    # Menggunakan fungsi dari kelas Kalkulator
+    A =int(input("A: "))
+    B =int(input("B: "))
+
+    
+
+    print(f"hasil {A} + {B} = {kalkulator.tambah(A, B)}")
+    print(f"hasil {A} - {B} = {kalkulator.kurang(A, B)}")
+    print(f"hasil {A} * {B} = {kalkulator.kali(A, B)}")
+    print(f"hasil {A} / {B} = {kalkulator.bagi(A, B)}")
+
+if __name__ == "__main__":
+    main()
